@@ -14,8 +14,8 @@ export const profile = {
   phoneRaw: "+34617510787",
   linkedin: "https://www.linkedin.com/in/pablojcm",
   linkedinHandle: "in/pablojcm",
-  github: "https://github.com/pablojcm", // TODO: actualizar cuando el perfil sea público
-  githubHandle: "pablojcm",
+  github: "https://github.com/SrMiyoga",
+  githubHandle: "SrMiyoga",
   siteUrl: "https://pablocasado.dev", // TODO: ajustar al dominio final de Vercel
 } as const;
 
