@@ -7,7 +7,7 @@ import type { Locale } from "./i18n";
    ────────────────────────────────────────────────────────────── */
 export const profile = {
   name: "Pablo Javier Casado Marco",
-  shortName: "Pablo Casado",
+  shortName: "Pablo Javier Casado",
   initials: "PC",
   email: "pablojcm02@gmail.com",
   phone: "+34 617 510 787",

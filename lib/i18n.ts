@@ -47,7 +47,7 @@ export const ui = {
     langLabel: "Idioma",
     a11y: { menu: "Menú", toggleTheme: "Cambiar tema", scrollTop: "Subir" },
     footer: {
-      built: "Diseñado y desarrollado por Pablo Casado",
+      built: "Diseñado y desarrollado por Pablo Javier Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
       rights: "Todos los derechos reservados.",
     },
@@ -74,7 +74,7 @@ export const ui = {
     langLabel: "Language",
     a11y: { menu: "Menu", toggleTheme: "Toggle theme", scrollTop: "Back to top" },
     footer: {
-      built: "Designed and built by Pablo Casado",
+      built: "Designed and built by Pablo Javier Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
       rights: "All rights reserved.",
     },
@@ -101,7 +101,7 @@ export const ui = {
     langLabel: "Idioma",
     a11y: { menu: "Menú", toggleTheme: "Canviar tema", scrollTop: "Tornar a dalt" },
     footer: {
-      built: "Dissenyat i desenvolupat per Pablo Casado",
+      built: "Dissenyat i desenvolupat per Pablo Javier Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
       rights: "Tots els drets reservats.",
     },

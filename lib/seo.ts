@@ -21,7 +21,7 @@ const META: Record<Locale, Record<PageKey, { title: string; description: string 
     caudal: {
       title: "Caudal — Caso de estudio",
       description:
-        "Caudal: aplicación full-stack de gestión financiera para hogares. Arquitectura hexagonal, Spring Boot, Angular, Open Banking y sincronización offline-first. Diseñada y desarrollada íntegramente por Pablo Casado.",
+        "Caudal: aplicación full-stack de gestión financiera para hogares. Arquitectura hexagonal, Spring Boot, Angular, Open Banking y sincronización offline-first. Diseñada y desarrollada íntegramente por Pablo Javier Casado.",
     },
     cv: {
       title: "Currículum",
@@ -41,7 +41,7 @@ const META: Record<Locale, Record<PageKey, { title: string; description: string 
     caudal: {
       title: "Caudal — Case study",
       description:
-        "Caudal: a full-stack financial management app for households. Hexagonal architecture, Spring Boot, Angular, Open Banking and offline-first sync. Designed and built entirely by Pablo Casado.",
+        "Caudal: a full-stack financial management app for households. Hexagonal architecture, Spring Boot, Angular, Open Banking and offline-first sync. Designed and built entirely by Pablo Javier Casado.",
     },
     cv: {
       title: "Résumé",
@@ -61,7 +61,7 @@ const META: Record<Locale, Record<PageKey, { title: string; description: string 
     caudal: {
       title: "Caudal — Cas d'estudi",
       description:
-        "Caudal: aplicació full-stack de gestió financera per a llars. Arquitectura hexagonal, Spring Boot, Angular, Open Banking i sincronització offline-first. Dissenyada i desenvolupada íntegrament per Pablo Casado.",
+        "Caudal: aplicació full-stack de gestió financera per a llars. Arquitectura hexagonal, Spring Boot, Angular, Open Banking i sincronització offline-first. Dissenyada i desenvolupada íntegrament per Pablo Javier Casado.",
     },
     cv: {
       title: "Currículum",
