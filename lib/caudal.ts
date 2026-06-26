@@ -12,6 +12,23 @@ export type CaudalScreen = {
 
 export type TechDecision = { title: string; body: string };
 
+/** Bounded contexts of the modular monolith (domain identifiers, locale-independent). */
+export const caudalModules = [
+  "auth",
+  "household",
+  "account",
+  "transaction",
+  "transfer",
+  "budget",
+  "settlement",
+  "category",
+  "subscription",
+  "notification",
+  "openbanking",
+  "sync",
+  "shared",
+];
+
 const es = {
   hero: {
     eyebrow: "Caso de estudio",
@@ -37,6 +54,11 @@ const es = {
     screens: "Pantallas",
     decisions: "Decisiones técnicas",
     stack: "Ficha técnica",
+  },
+  modules: {
+    title: "Módulos del dominio",
+    intro:
+      "Un monolito modular de 14 módulos con fronteras claras entre contextos. Los principales:",
   },
   overview: [
     "El problema: gestionar el dinero compartido en un hogar es un caos de hojas de cálculo, deudas que nadie recuerda y apps pensadas para una sola persona. Caudal lo resuelve modelando el hogar como entidad de primer nivel: varias personas, varias cuentas, reglas de reparto y un saldo de deudas siempre claro.",
@@ -148,6 +170,11 @@ const en: CaudalContent = {
     decisions: "Technical decisions",
     stack: "Tech sheet",
   },
+  modules: {
+    title: "Domain modules",
+    intro:
+      "A modular monolith of 14 modules with clear boundaries between contexts. The main ones:",
+  },
   overview: [
     "The problem: managing shared money in a household is a mess of spreadsheets, debts nobody remembers, and apps built for a single person. Caudal solves it by modelling the household as a first-class entity: multiple people, multiple accounts, splitting rules and an always-clear debt balance.",
     "The app works offline. The client persists to local SQLite, queues every change in an outbox, and syncs bidirectionally with the server when there's a connection, resolving conflicts last-write-wins. Identifiers are minted on the client, so each record keeps its identity across devices.",
@@ -255,6 +282,11 @@ const ca: CaudalContent = {
     screens: "Pantalles",
     decisions: "Decisions tècniques",
     stack: "Fitxa tècnica",
+  },
+  modules: {
+    title: "Mòduls del domini",
+    intro:
+      "Un monòlit modular de 14 mòduls amb fronteres clares entre contextos. Els principals:",
   },
   overview: [
     "El problema: gestionar els diners compartits en una llar és un caos de fulls de càlcul, deutes que ningú recorda i apps pensades per a una sola persona. Caudal ho resol modelant la llar com a entitat de primer nivell: diverses persones, diversos comptes, regles de repartiment i un saldo de deutes sempre clar.",

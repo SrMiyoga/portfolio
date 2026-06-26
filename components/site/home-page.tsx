@@ -8,8 +8,9 @@ import { FeaturedProject } from "@/components/sections/featured-project";
 import { Stack } from "@/components/sections/stack";
 import { Education } from "@/components/sections/education";
 import { Contact } from "@/components/sections/contact";
+import { ScrollTop } from "@/components/ui/scroll-top";
 import { getContent } from "@/lib/content";
-import type { Locale } from "@/lib/i18n";
+import { ui, type Locale } from "@/lib/i18n";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
@@ -28,6 +29,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         <Contact c={c} locale={locale} />
       </main>
       <Footer locale={locale} />
+      <ScrollTop label={ui[locale].a11y.scrollTop} />
     </>
   );
 }

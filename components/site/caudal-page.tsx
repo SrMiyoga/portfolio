@@ -7,10 +7,12 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { CountUp } from "@/components/ui/count-up";
 import { ArchitectureDiagram } from "@/components/caudal/architecture-diagram";
+import { Modules } from "@/components/caudal/modules";
 import { FeatureGrid } from "@/components/caudal/feature-grid";
 import { ScreenGallery } from "@/components/caudal/screen-gallery";
 import { TechSheet } from "@/components/caudal/tech-sheet";
 import { Decisions } from "@/components/caudal/decisions";
+import { ScrollTop } from "@/components/ui/scroll-top";
 import { caudalContent } from "@/lib/caudal";
 import { localizedPath, ui, type Locale } from "@/lib/i18n";
 
@@ -91,6 +93,9 @@ export function CaudalPage({ locale }: { locale: Locale }) {
           <Reveal>
             <ArchitectureDiagram locale={locale} />
           </Reveal>
+          <Reveal>
+            <Modules title={d.modules.title} intro={d.modules.intro} />
+          </Reveal>
         </Section>
 
         {/* Features */}
@@ -125,6 +130,7 @@ export function CaudalPage({ locale }: { locale: Locale }) {
       </main>
 
       <Footer locale={locale} />
+      <ScrollTop label={t.a11y.scrollTop} />
     </>
   );
 }

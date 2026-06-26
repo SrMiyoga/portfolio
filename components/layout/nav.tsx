@@ -1,28 +1,51 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X, FileDown } from "lucide-react";
 import { localizedPath, ui, type Locale } from "@/lib/i18n";
 import { profile } from "@/lib/content";
 import { ThemeToggle } from "./theme-toggle";
 import { LangToggle } from "./lang-toggle";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 export function Nav({ locale }: { locale: Locale }) {
   const t = ui[locale];
   const home = localizedPath(locale, "/");
   const [open, setOpen] = useState(false);
+  const [activeId, setActiveId] = useState("");
 
   const links = [
-    { href: `${home}#about`, label: t.nav.about },
-    { href: `${home}#experience`, label: t.nav.experience },
-    { href: `${home}#project`, label: t.nav.project },
-    { href: `${home}#stack`, label: t.nav.stack },
-    { href: `${home}#contact`, label: t.nav.contact },
+    { id: "about", label: t.nav.about },
+    { id: "experience", label: t.nav.experience },
+    { id: "project", label: t.nav.project },
+    { id: "stack", label: t.nav.stack },
+    { id: "contact", label: t.nav.contact },
   ];
+
+  // Highlight the section currently in view (home page only; on other pages
+  // these ids don't exist and the observer simply finds nothing).
+  useEffect(() => {
+    const els = links
+      .map((l) => document.getElementById(l.id))
+      .filter((el): el is HTMLElement => el !== null);
+    if (!els.length) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActiveId(e.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 },
+    );
+    els.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <header className="no-print sticky top-0 z-50 border-b border-hair bg-[var(--bg)]/70 backdrop-blur-xl">
+      <ScrollProgress />
       <nav className="container-tight flex h-16 items-center justify-between gap-4">
         <Link
           href={home}
@@ -36,16 +59,25 @@ export function Nav({ locale }: { locale: Locale }) {
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="group/nav relative px-3 py-2 text-sm text-muted transition-colors hover:text-[var(--fg)]"
-            >
-              {l.label}
-              <span className="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover/nav:scale-x-100" />
-            </Link>
-          ))}
+          {links.map((l) => {
+            const active = l.id === activeId;
+            return (
+              <Link
+                key={l.id}
+                href={`${home}#${l.id}`}
+                className={`group/nav relative px-3 py-2 text-sm transition-colors hover:text-[var(--fg)] ${
+                  active ? "text-[var(--fg)]" : "text-muted"
+                }`}
+              >
+                {l.label}
+                <span
+                  className={`absolute inset-x-3 -bottom-0.5 h-px origin-left bg-accent transition-transform duration-300 group-hover/nav:scale-x-100 ${
+                    active ? "scale-x-100" : "scale-x-0"
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </div>
 
         <div className="flex items-center gap-2">
@@ -77,8 +109,8 @@ export function Nav({ locale }: { locale: Locale }) {
           <div className="container-tight flex flex-col gap-1 py-4">
             {links.map((l) => (
               <Link
-                key={l.href}
-                href={l.href}
+                key={l.id}
+                href={`${home}#${l.id}`}
                 onClick={() => setOpen(false)}
                 className="rounded-md px-3 py-2.5 text-[15px] text-muted transition-colors hover:bg-surface hover:text-[var(--fg)]"
               >

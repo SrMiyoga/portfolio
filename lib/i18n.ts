@@ -45,7 +45,7 @@ export const ui = {
     },
     theme: { light: "Tema claro", dark: "Tema oscuro" },
     langLabel: "Idioma",
-    a11y: { menu: "Menú", toggleTheme: "Cambiar tema" },
+    a11y: { menu: "Menú", toggleTheme: "Cambiar tema", scrollTop: "Subir" },
     footer: {
       built: "Diseñado y desarrollado por Pablo Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
@@ -72,7 +72,7 @@ export const ui = {
     },
     theme: { light: "Light theme", dark: "Dark theme" },
     langLabel: "Language",
-    a11y: { menu: "Menu", toggleTheme: "Toggle theme" },
+    a11y: { menu: "Menu", toggleTheme: "Toggle theme", scrollTop: "Back to top" },
     footer: {
       built: "Designed and built by Pablo Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
@@ -99,7 +99,7 @@ export const ui = {
     },
     theme: { light: "Tema clar", dark: "Tema fosc" },
     langLabel: "Idioma",
-    a11y: { menu: "Menú", toggleTheme: "Canviar tema" },
+    a11y: { menu: "Menú", toggleTheme: "Canviar tema", scrollTop: "Tornar a dalt" },
     footer: {
       built: "Dissenyat i desenvolupat per Pablo Casado",
       stack: "Next.js · TypeScript · Tailwind CSS",
