@@ -122,18 +122,6 @@ const es = {
           "Confluence",
         ],
       },
-      {
-        company: "Lidl",
-        role: "Compaginado con los estudios",
-        period: "2020 — 2023",
-        muted: true,
-        summary:
-          "Tres años a turnos mientras cursaba el ciclo de Desarrollo de Aplicaciones Multiplataforma.",
-        bullets: [
-          "Constancia y responsabilidad compaginando un empleo exigente con la formación técnica.",
-        ],
-        stack: [],
-      },
     ] as TimelineItem[],
   },
   featured: {
@@ -340,18 +328,6 @@ const en: SiteContent = {
           "Confluence",
         ],
       },
-      {
-        company: "Lidl",
-        role: "Alongside my studies",
-        period: "2020 — 2023",
-        muted: true,
-        summary:
-          "Three years of shift work while studying for my Multiplatform Application Development diploma.",
-        bullets: [
-          "Consistency and responsibility, balancing a demanding job with technical education.",
-        ],
-        stack: [],
-      },
     ] as TimelineItem[],
   },
   featured: {
@@ -555,18 +531,6 @@ const ca: SiteContent = {
           "Jira",
           "Confluence",
         ],
-      },
-      {
-        company: "Lidl",
-        role: "Compaginat amb els estudis",
-        period: "2020 — 2023",
-        muted: true,
-        summary:
-          "Tres anys a torns mentre cursava el cicle de Desenvolupament d'Aplicacions Multiplataforma.",
-        bullets: [
-          "Constància i responsabilitat compaginant una feina exigent amb la formació tècnica.",
-        ],
-        stack: [],
       },
     ] as TimelineItem[],
   },
