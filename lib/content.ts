@@ -43,7 +43,7 @@ const es = {
     location: "Barcelona",
     available: "Abierto a nuevas oportunidades",
     metrics: [
-      { value: "3+", label: "años en producción" },
+      { value: "5+", label: "años en producción" },
       { value: "Multisector", label: "banca · público · IA" },
       { value: "Full-stack", label: "producto end-to-end" },
     ],
@@ -95,7 +95,7 @@ const es = {
       {
         company: "Indra",
         role: "Backend Software Engineer",
-        period: "Sep 2023 — May 2026",
+        period: "Sep 2021 — May 2026",
         client: "Clientes: CaixaBank · Consejo General del Poder Judicial",
         summary:
           "Evolución y mantenimiento de sistemas críticos para el sector bancario y la administración de justicia.",
@@ -261,7 +261,7 @@ const en: SiteContent = {
     location: "Barcelona (Spain)",
     available: "Open to new opportunities",
     metrics: [
-      { value: "3+", label: "years in production" },
+      { value: "5+", label: "years in production" },
       { value: "Multi-sector", label: "banking · public · AI" },
       { value: "Full-stack", label: "end-to-end product" },
     ],
@@ -270,7 +270,7 @@ const en: SiteContent = {
     title: "About",
     lead: "I build complete products, made to last in production.",
     paragraphs: [
-      "I've spent 3+ years building software in places where failing is expensive: banking at CaixaBank, the justice administration at Spain's General Council of the Judiciary (CGPJ) —both through Indra— and now an AI-driven product at Mytic Innova. Very different sectors with one constant: treating reliability, security and data as requirements, not extras.",
+      "I've spent 5+ years building software in places where failing is expensive: banking at CaixaBank, the justice administration at Spain's General Council of the Judiciary (CGPJ) —both through Indra— and now an AI-driven product at Mytic Innova. Very different sectors with one constant: treating reliability, security and data as requirements, not extras.",
       "I work end to end: data model, architecture, APIs, frontend, deployment and support when something breaks. Backend is where I go deepest —Java and Spring Boot— but I move across the whole stack without treating any layer as someone else's job. I review code and support people who are starting out.",
       "I care about the how: I'd rather write an architecture someone still understands a year from now than a solution that just makes it by Friday. I use AI (ChatGPT, Claude Code) as one more tool to move fast without giving up judgement. And when I want to build a whole product my way, I do — that's how Caudal came to be.",
     ],
@@ -313,7 +313,7 @@ const en: SiteContent = {
       {
         company: "Indra",
         role: "Backend Software Engineer",
-        period: "Sep 2023 — May 2026",
+        period: "Sep 2021 — May 2026",
         client: "Clients: CaixaBank · General Council of the Judiciary (CGPJ)",
         summary:
           "Evolution and maintenance of critical systems for the banking sector and the justice administration.",
@@ -477,7 +477,7 @@ const ca: SiteContent = {
     location: "Barcelona",
     available: "Obert a noves oportunitats",
     metrics: [
-      { value: "3+", label: "anys en producció" },
+      { value: "5+", label: "anys en producció" },
       { value: "Multisector", label: "banca · públic · IA" },
       { value: "Full-stack", label: "producte end-to-end" },
     ],
@@ -529,7 +529,7 @@ const ca: SiteContent = {
       {
         company: "Indra",
         role: "Backend Software Engineer",
-        period: "Set. 2023 — Maig 2026",
+        period: "Set. 2021 — Maig 2026",
         client: "Clients: CaixaBank · Consell General del Poder Judicial",
         summary:
           "Evolució i manteniment de sistemes crítics per al sector bancari i l'administració de justícia.",
